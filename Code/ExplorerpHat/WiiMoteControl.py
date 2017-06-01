@@ -14,7 +14,7 @@ time.sleep(1)
 # Try to connect to the Wiimote & quit if not found
 try:
   wii=cwiid.Wiimote()
-except RuntimeError:
+  except RuntimeError:
   print "Can't connect to Wiimote"
   quit()
 
@@ -25,22 +25,22 @@ while True:
   buttons = wii.state['buttons']
   if (buttons & cwiid.BTN_UP):
     #Forwards
-  time.sleep(button_delay)    
+  	time.sleep(button_delay)    
 	eh.motor.one.forward(100)
 	eh.motor.two.forward(100)
    
   elif (buttons & cwiid.BTN_DOWN):
-  time.sleep(button_delay)  
+	time.sleep(button_delay)  
 	eh.motor.one.backward(100)
 	eh.motor.two.backward(100)
   
   elif (buttons & cwiid.BTN_LEFT):
-  time.sleep(button_delay)         
+	time.sleep(button_delay)         
 	eh.motor.one.forward(100)
 	eh.motor.two.backward(100)
    
   elif(buttons & cwiid.BTN_RIGHT):
-  time.sleep(button_delay)          
+	time.sleep(button_delay)          
 	eh.motor.one.backward(100)
 	eh.motor.two.forward(100)
   
