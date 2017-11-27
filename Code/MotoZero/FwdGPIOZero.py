@@ -1,30 +1,25 @@
-from gpiozero import Motor, OutputDevice
+from gpiozero import Robot
 from time import sleep
 
-#Motor Setup
-motor1 = Motor(24, 27)
-motor1_enable = OutputDevice(5, initial_value=1)
-motor2 = Motor(6, 22)
-motor2_enable = OutputDevice(17, initial_value=1)
-motor3 = Motor(23, 16)
-motor3_enable = OutputDevice(12, initial_value=1)
-motor4 = Motor(13, 18)
-motor4_enable = OutputDevice(25, initial_value=1) 
+robot = Robot(left=(4, 14), right=(17, 18))
 
+robot.forward() # full speed forwards
+robot.forward(0.5) # half speed forwards
 
-motor.forward() # full speed forwards
-motor.forward(0.5) # half speed forwards
+robot.backward() # full speed backwards
+robot.backward(0.5) # half speed backwards
 
-motor.backward() # full speed backwards
-motor.backward(0.5) # half speed backwards
+robot.stop() # stop the motor
 
-motor.stop() # stop the motor
+robot.value = 0.5 # half speed forwards
+robot.value = -0.5 # half speed backwards
+robot.value = 0 # stop
 
-motor.value = 0.5 # half speed forwards
-motor.value = -0.5 # half speed backwards
-motor.value = 0 # stop
+robot.reverse() # reverse direction at same speed, e.g...
 
-motor.reverse() # reverse direction at same speed, e.g...
+robot.forward(0.5) # going forward at half speed
+robot.reverse() # now going backwards at half speed 
 
-motor.forward(0.5) # going forward at half speed
-motor.reverse() # now going backwards at half speed 
+robot.right()
+
+robot.left()
