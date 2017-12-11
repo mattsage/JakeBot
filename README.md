@@ -4,7 +4,7 @@
 
 ### 
 
-## JakeBot
+## Mio
 ### "Hacking" a Science Museum "Mio" Robot  
 
 This is a small project with my 11 Year old Stepson to help "Improve" his Christmas Present using a Raspberry pi.  
