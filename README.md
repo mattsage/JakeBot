@@ -11,7 +11,7 @@ This is a small project with my 11 Year old Stepson to help "Improve" his Christ
 
 This will be his first Programming project.  
 
-![Mio](/Images/JakeBot/Mio.jpg?raw=true)
+![Mio](/Robots/Mio/Images/Mio.jpg?raw=true)
 
 ### Robot Projects
 * Code Move
