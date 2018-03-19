@@ -20,7 +20,4 @@ os.system("mpg321 ./rw2016_cease_opt2.mp3")
 
 led2.off()
 
-os.system("mpg321 ./rw2016_cease_opt2.mp3")
-
-
 os.system("/home/pi/Pimoroni/speakerphat/test/Stand_by.py")
