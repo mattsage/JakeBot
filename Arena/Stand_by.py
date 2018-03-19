@@ -3,8 +3,8 @@ import time
 import os
 from gpiozero import LED, Button
 
-led = LED(17)
-button = Button(3)
+led = LED(23)
+button = Button(22)
 
 led.on()
 
