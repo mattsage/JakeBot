@@ -3,8 +3,8 @@ import time
 import os
 from gpiozero import LED
 
-led = LED(17)
-led2 = LED(18)
+led = LED(23)
+led2 = LED(24)
 
 os.system("mpg321 ./rw2016_321.mp3")
 os.system("mpg321 ./rw2016_activate.mp3")
